@@ -9,7 +9,7 @@ juso_sheetname='Sheet';
 if os.path.isfile(juso_filename):
     os.remove(juso_filename)
 
-juso_keyword = '동백동 아파트'
+juso_keyword = '부산역'
 juso_cnt = 5 
 addresses = search_juso(juso_filename,juso_sheetname,juso_keyword, juso_cnt)
 # print(addresses)
