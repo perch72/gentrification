@@ -2,7 +2,7 @@ import time, random, re
 import requests
 from bs4 import BeautifulSoup
 
-def search_juso(workbook_name,juso_sheetname,keyword, juso_cnt):
+def search_juso(keyword, juso_cnt):
     ## 추출한 주소 저장할 엑셀 생성 
 
 

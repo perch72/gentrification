@@ -3,15 +3,9 @@ import json
 from search_juso import *
 import folium
 
-
-juso_filename='map.xlsx';
-juso_sheetname='Sheet';
-if os.path.isfile(juso_filename):
-    os.remove(juso_filename)
-
 juso_keyword = '부산역'
 juso_cnt = 5 
-addresses = search_juso(juso_filename,juso_sheetname,juso_keyword, juso_cnt)
+addresses = search_juso(juso_keyword, juso_cnt)
 # print(addresses)
 for address in addresses:
     
