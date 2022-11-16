@@ -29,3 +29,5 @@ log_btn.click()
 time.sleep(1)
 option_btn = driver.find_element(By.XPATH,'//*[@id="react-root"]/div/div/section/main/div/div/div/div/button')
 option_btn.click()
+
+print("test")
