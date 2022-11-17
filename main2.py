@@ -90,7 +90,7 @@ if(len(map_data)>0):
         #             location=map_data[i][2],
         #             tooltip=map_data[i][0],
         #             color='tomato',
-        #             radius = 200).add_to(marker_cluster)
+        #             radius = 200).add_to(marker_cluster)g
 
 
     m.save('map.html')
