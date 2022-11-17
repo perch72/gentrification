@@ -25,7 +25,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_687a1cd67f8ea2258e4e2eb89c8c7454 {
+                #map_58f610aa2eaa26fffbb28331f13e808e {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -41,18 +41,18 @@
 <body>
     
     
-            <div class="folium-map" id="map_687a1cd67f8ea2258e4e2eb89c8c7454" ></div>
+            <div class="folium-map" id="map_58f610aa2eaa26fffbb28331f13e808e" ></div>
         
 </body>
 <script>
     
     
-            var map_687a1cd67f8ea2258e4e2eb89c8c7454 = L.map(
-                "map_687a1cd67f8ea2258e4e2eb89c8c7454",
+            var map_58f610aa2eaa26fffbb28331f13e808e = L.map(
+                "map_58f610aa2eaa26fffbb28331f13e808e",
                 {
-                    center: [35.1137727, 129.03752],
+                    center: [37.2715726, 127.1286331],
                     crs: L.CRS.EPSG3857,
-                    zoom: 17,
+                    zoom: 12,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -62,97 +62,191 @@
 
         
     
-            var tile_layer_c6ec44553df953fff96b513618fe5f7c = L.tileLayer(
+            var tile_layer_06453c25c9fafb7ffeef1c24ecc1dccc = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_687a1cd67f8ea2258e4e2eb89c8c7454);
+            ).addTo(map_58f610aa2eaa26fffbb28331f13e808e);
         
     
-            var marker_cluster_20cee1646c17a986ce498635502965ae = L.markerClusterGroup(
+            var marker_cluster_8fecc635037b8b5d3365a44e8e142020 = L.markerClusterGroup(
                 {}
             );
-            map_687a1cd67f8ea2258e4e2eb89c8c7454.addLayer(marker_cluster_20cee1646c17a986ce498635502965ae);
+            map_58f610aa2eaa26fffbb28331f13e808e.addLayer(marker_cluster_8fecc635037b8b5d3365a44e8e142020);
         
     
-            var marker_9fe647c7df8e238846f9dea12d44b835 = L.marker(
-                [35.1137727, 129.03752],
+            var marker_489746fb82a96138f8f5e4983b646d6b = L.marker(
+                [37.2715726, 127.1286331],
                 {}
-            ).addTo(marker_cluster_20cee1646c17a986ce498635502965ae);
+            ).addTo(marker_cluster_8fecc635037b8b5d3365a44e8e142020);
         
     
-            var icon_525aa5053192ec21a4f52002b93325f6 = L.AwesomeMarkers.icon(
+            var icon_e2bd1aae7f5fd1892391a357b2af8158 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_9fe647c7df8e238846f9dea12d44b835.setIcon(icon_525aa5053192ec21a4f52002b93325f6);
+            marker_489746fb82a96138f8f5e4983b646d6b.setIcon(icon_e2bd1aae7f5fd1892391a357b2af8158);
         
     
-        var popup_7dd09cd14947f7c785920dad0b63b005 = L.popup({"maxWidth": "100%"});
+        var popup_7b64fa0a848cd7167ab46cf285ad6059 = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_cd8fece37203a2208179d6398d4e6752 = $(`<div id="html_cd8fece37203a2208179d6398d4e6752" style="width: 100.0%; height: 100.0%;">test</div>`)[0];
-                popup_7dd09cd14947f7c785920dad0b63b005.setContent(html_cd8fece37203a2208179d6398d4e6752);
+                var html_536890176cf9b3da35646a8547430740 = $(`<div id="html_536890176cf9b3da35646a8547430740" style="width: 100.0%; height: 100.0%;">Yongin</div>`)[0];
+                popup_7b64fa0a848cd7167ab46cf285ad6059.setContent(html_536890176cf9b3da35646a8547430740);
             
         
 
-        marker_9fe647c7df8e238846f9dea12d44b835.bindPopup(popup_7dd09cd14947f7c785920dad0b63b005)
+        marker_489746fb82a96138f8f5e4983b646d6b.bindPopup(popup_7b64fa0a848cd7167ab46cf285ad6059)
         ;
 
         
     
     
-            var marker_62283a5b159ab6ec17b428b8018d6aa0 = L.marker(
-                [35.1211116, 129.0438847],
-                {}
-            ).addTo(marker_cluster_20cee1646c17a986ce498635502965ae);
+            marker_489746fb82a96138f8f5e4983b646d6b.bindTooltip(
+                `<div>
+                     Yongin
+                 </div>`,
+                {"sticky": true}
+            );
         
     
-            var icon_c9ddbd8daad6c98388be8575566f0996 = L.AwesomeMarkers.icon(
+            var marker_87822a3f33829de8ca5317fbcdda2707 = L.marker(
+                [37.2587674, 127.1219136],
+                {}
+            ).addTo(marker_cluster_8fecc635037b8b5d3365a44e8e142020);
+        
+    
+            var icon_f0eba67a7606fff5b616c9caad49e8d5 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_62283a5b159ab6ec17b428b8018d6aa0.setIcon(icon_c9ddbd8daad6c98388be8575566f0996);
+            marker_87822a3f33829de8ca5317fbcdda2707.setIcon(icon_f0eba67a7606fff5b616c9caad49e8d5);
         
     
-        var popup_4cc3bbe047b04da4765c4f44a0916623 = L.popup({"maxWidth": "100%"});
+        var popup_49c1c2149cbee5d4be4501b92cea1e7c = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_c0d541882094c1e81e6de59d1806cd8c = $(`<div id="html_c0d541882094c1e81e6de59d1806cd8c" style="width: 100.0%; height: 100.0%;">test</div>`)[0];
-                popup_4cc3bbe047b04da4765c4f44a0916623.setContent(html_c0d541882094c1e81e6de59d1806cd8c);
+                var html_1669c79ca8b44eaec4f42499e3ef031b = $(`<div id="html_1669c79ca8b44eaec4f42499e3ef031b" style="width: 100.0%; height: 100.0%;">한국민속촌</div>`)[0];
+                popup_49c1c2149cbee5d4be4501b92cea1e7c.setContent(html_1669c79ca8b44eaec4f42499e3ef031b);
             
         
 
-        marker_62283a5b159ab6ec17b428b8018d6aa0.bindPopup(popup_4cc3bbe047b04da4765c4f44a0916623)
+        marker_87822a3f33829de8ca5317fbcdda2707.bindPopup(popup_49c1c2149cbee5d4be4501b92cea1e7c)
         ;
 
         
     
     
-            var marker_14db98aecfb4f54d84f27e35bccbdba6 = L.marker(
-                [35.1215137, 129.0441029],
-                {}
-            ).addTo(marker_cluster_20cee1646c17a986ce498635502965ae);
+            marker_87822a3f33829de8ca5317fbcdda2707.bindTooltip(
+                `<div>
+                     한국민속촌
+                 </div>`,
+                {"sticky": true}
+            );
         
     
-            var icon_5a8b911af017fcd444e558cc8030dc2c = L.AwesomeMarkers.icon(
+            var marker_c0e014aef5c312a0138588be32adb158 = L.marker(
+                [37.277717, 127.0592904],
+                {}
+            ).addTo(marker_cluster_8fecc635037b8b5d3365a44e8e142020);
+        
+    
+            var icon_2170e11153ecc5ab26322bb4bf4d5ec0 = L.AwesomeMarkers.icon(
                 {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
             );
-            marker_14db98aecfb4f54d84f27e35bccbdba6.setIcon(icon_5a8b911af017fcd444e558cc8030dc2c);
+            marker_c0e014aef5c312a0138588be32adb158.setIcon(icon_2170e11153ecc5ab26322bb4bf4d5ec0);
         
     
-        var popup_3e8f1881476c55a8e4c2679c7cb2c3dd = L.popup({"maxWidth": "100%"});
+        var popup_8e1aa70fd513067517d3fea47c60034d = L.popup({"maxWidth": "100%"});
 
         
             
-                var html_b28ecf1500109df9215f34814674bfc7 = $(`<div id="html_b28ecf1500109df9215f34814674bfc7" style="width: 100.0%; height: 100.0%;">test</div>`)[0];
-                popup_3e8f1881476c55a8e4c2679c7cb2c3dd.setContent(html_b28ecf1500109df9215f34814674bfc7);
+                var html_911d473a9de2dbd9b7c556803aa2842e = $(`<div id="html_911d473a9de2dbd9b7c556803aa2842e" style="width: 100.0%; height: 100.0%;">수원 광교 호수공원</div>`)[0];
+                popup_8e1aa70fd513067517d3fea47c60034d.setContent(html_911d473a9de2dbd9b7c556803aa2842e);
             
         
 
-        marker_14db98aecfb4f54d84f27e35bccbdba6.bindPopup(popup_3e8f1881476c55a8e4c2679c7cb2c3dd)
+        marker_c0e014aef5c312a0138588be32adb158.bindPopup(popup_8e1aa70fd513067517d3fea47c60034d)
         ;
 
         
     
+    
+            marker_c0e014aef5c312a0138588be32adb158.bindTooltip(
+                `<div>
+                     수원 광교 호수공원
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1d778b894e5f4dd06b4c857238944dfb = L.marker(
+                [37.2769494, 127.2265797],
+                {}
+            ).addTo(marker_cluster_8fecc635037b8b5d3365a44e8e142020);
+        
+    
+            var icon_920fb1cd5dc8b8679a50680dbcc3df87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1d778b894e5f4dd06b4c857238944dfb.setIcon(icon_920fb1cd5dc8b8679a50680dbcc3df87);
+        
+    
+        var popup_a0e24ea45142a807a84cd3d8e79b8c72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a8ba69d70fcffd01c727fcb63df49476 = $(`<div id="html_a8ba69d70fcffd01c727fcb63df49476" style="width: 100.0%; height: 100.0%;">Everland</div>`)[0];
+                popup_a0e24ea45142a807a84cd3d8e79b8c72.setContent(html_a8ba69d70fcffd01c727fcb63df49476);
+            
+        
+
+        marker_1d778b894e5f4dd06b4c857238944dfb.bindPopup(popup_a0e24ea45142a807a84cd3d8e79b8c72)
+        ;
+
+        
+    
+    
+            marker_1d778b894e5f4dd06b4c857238944dfb.bindTooltip(
+                `<div>
+                     Everland
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e92a6c179bb77cb170a14010a199f6cf = L.marker(
+                [37.5086115, 126.6729878],
+                {}
+            ).addTo(marker_cluster_8fecc635037b8b5d3365a44e8e142020);
+        
+    
+            var icon_fbe40544d9324e6e8afba122cc84c2e5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e92a6c179bb77cb170a14010a199f6cf.setIcon(icon_fbe40544d9324e6e8afba122cc84c2e5);
+        
+    
+        var popup_8ecd8a6d6e2910e4337b70371b9efd35 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_31a07de0ca3e223ec911f047416eb1e6 = $(`<div id="html_31a07de0ca3e223ec911f047416eb1e6" style="width: 100.0%; height: 100.0%;">에버랜드</div>`)[0];
+                popup_8ecd8a6d6e2910e4337b70371b9efd35.setContent(html_31a07de0ca3e223ec911f047416eb1e6);
+            
+        
+
+        marker_e92a6c179bb77cb170a14010a199f6cf.bindPopup(popup_8ecd8a6d6e2910e4337b70371b9efd35)
+        ;
+
+        
+    
+    
+            marker_e92a6c179bb77cb170a14010a199f6cf.bindTooltip(
+                `<div>
+                     에버랜드
+                 </div>`,
+                {"sticky": true}
+            );
+        
 </script>
 </html>

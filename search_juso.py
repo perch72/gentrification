@@ -15,7 +15,7 @@ def search_juso(keyword, juso_cnt):
     row = 2
     rows = []
     for page in range(1, ext_cnt + 1):
-        url = f'https://www.juso.go.kr/support/AddressMainSearch.do?currentPage={page}&countPerPage=10&&searchType=\\n        TOTAL&searchKeyword={keyword}&firstSort=none&ablYn=Y&synnYn=N'
+        url = f'https://www.juso.go.kr/support/AddressMainSearch.do?currentPage={page}&countPerPage=10&&searchType=TOTAL&searchKeyword={keyword}&firstSort=none&ablYn=Y&synnYn=N'
 
         res = requests.get(url, headers=headers)
         soup = BeautifulSoup(res.text, 'html.parser')
@@ -27,27 +27,27 @@ def search_juso(keyword, juso_cnt):
             try:
                 roed_juso = li.find('div', class_='subejct_1').find('span', class_='roadNameText').text
                 road = re.sub('&nbsp;|\t|\r|\n', '', roed_juso).strip().replace('  ', ' ')
-                print(f'\n[{row-1}] 주소추출:\n{road}')
+                # print(f'\n[{row-1}] 주소추출:\n{road}')
                 
                 road_eng = li.find('div', class_='addrEngInfo').find('span', class_='addrEng').text
                 eng_roadname = re.sub('&nbsp;|\t|\r|\n', '', road_eng).strip().replace('  ', ' ')
-                print(eng_roadname)                
+                # print(eng_roadname)                
                 
                 jibeon_juso = li.find('div', class_='subejct_2').find('span', class_='roadNameText').text
                 jibeon = re.sub('&nbsp;|\t|\r|\n', '', jibeon_juso).strip().replace('  ', ' ')
-                print(jibeon)
+                # print(jibeon)
                 
                 zipcode = li.select_one('div.addrWrap > div.zipcode > div > strong').text
-                print(zipcode)
+                # print(zipcode)
                 
                 btn = li.find('button', class_='btn_dtaddr_on')
-
+                rows.append( [row - 1,zipcode,road,eng_roadname,jibeon])
+                continue
                 ## 상세주소(동.층.호) 버튼이 있는 경우만 엑셀에 저장 
-                if btn: 
-                    rows.append( [row - 1,zipcode,road,eng_roadname,jibeon])
-                    row += 1
-                else:
-                    continue
+                # if btn: 
+                #     rows.append( [row - 1,zipcode,road,eng_roadname,jibeon])
+                #     row += 1
+                # else:
             except Exception as e:
                 print(f'\nError: {e}\n')
                 err = f'Error: {e}\n'
@@ -55,4 +55,3 @@ def search_juso(keyword, juso_cnt):
                     f.write(err)
                 continue
     return rows
-        # time.sleep(random.uniform(0.5, 1))
