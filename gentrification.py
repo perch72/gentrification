@@ -12,8 +12,8 @@ for address in addresses:
     encoding_address = urllib.parse.quote_plus(address[4])
     url =f'https://naveropenapi.apigw.ntruss.com/map-geocode/v2/geocode?query={encoding_address}'
     request = urllib.request.Request(url)
-    request.add_header("X-NCP-APIGW-API-KEY-ID","g16y0o5aaa")
-    request.add_header("X-NCP-APIGW-API-KEY","0FqB7fToW2cclewTZVL87xFWn7HV6mH0Kb6UvXEo")
+    request.add_header("X-NCP-APIGW-API-KEY-ID","naver-key-id")
+    request.add_header("X-NCP-APIGW-API-KEY","naver-key")
 
     response = urllib.request.urlopen(request)
     response_code = response.getcode()
